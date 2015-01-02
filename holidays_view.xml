@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <record model="ir.ui.view" id="holidays_form_nh_view">
+            <field name="name">hr.holidays.nh.form.inherit</field>
+            <field name="model">hr.holidays</field>
+            <field name="inherit_id" ref="hr_holidays.edit_holiday_new"/>
+            <field name="arch" type="xml">
+                <data>
+			<field name="department_id" position="after">
+				<group>
+	                                <field name="holiday_duration_hours" />
+				</group>
+			</field>
+                </data>
+             </field>
+        </record>
+
+     </data>
+</openerp>
